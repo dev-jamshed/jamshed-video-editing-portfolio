@@ -14,7 +14,7 @@ const featuredTitles = ['Ultra Realistic AI Avatar Ad','AI Avatar Video','Coach 
 const img = (id,w=900,h=600) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&h=${h}&q=85`;
 const demoVideo = 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4';
 const UPWORK_URL = 'https://www.upwork.com/freelancers/~017b6b532ce40f11cf';
-const API_ROOT = 'http://localhost:3001/api';
+const API_ROOT = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 const API_URL = `${API_ROOT}/settings`;
 const defaultSettings = {description:'Iâ€™m Jamshed, a Video Editor with 5+ years of experience creating engaging, conversion-focused UGC ads, AI videos, VSLs, eCommerce product ads and social media content.',upworkUrl:UPWORK_URL,contactLabel:'Get In Touch',heroEyebrow:'AI VIDEO EDITOR | UGC ADS | VSLs',heroLine1:'VIDEOS THAT',heroLine2:'STOP THE SCROLL'};
 const getSettings = () => { try { return {...defaultSettings,...JSON.parse(localStorage.getItem('jamshedSettings')||'{}')}; } catch { return defaultSettings; } };
