@@ -1,0 +1,9 @@
+{
+  "name": "jamshed-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview", "server:install": "npm --prefix server install", "server:dev": "npm --prefix server run start:dev", "server:build": "npm --prefix server run build" },
+  "dependencies": { "@vitejs/plugin-react": "latest", "vite": "latest", "react": "latest", "react-dom": "latest", "lucide-react": "latest" },
+  "devDependencies": {}
+}

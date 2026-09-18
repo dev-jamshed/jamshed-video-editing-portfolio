@@ -1,0 +1,32 @@
+{
+  "name": "jamshed-portfolio-api",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "seed:portfolio": "node scripts/seed-portfolio.mjs"
+  },
+  "dependencies": {
+    "@nestjs/common": "latest",
+    "@nestjs/core": "latest",
+    "@nestjs/platform-express": "latest",
+    "class-transformer": "latest",
+    "class-validator": "latest",
+    "dotenv": "latest",
+    "jamshed-portfolio": "file:..",
+    "reflect-metadata": "latest",
+    "rxjs": "latest"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "latest",
+    "@nestjs/schematics": "latest",
+    "@nestjs/testing": "latest",
+    "@types/node": "latest",
+    "@types/multer": "latest",
+    "ts-loader": "latest",
+    "ts-node": "latest",
+    "typescript": "^6.0.0"
+  }
+}

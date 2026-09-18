@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Build output
+dist/
+server/dist/
+
+# Environment and local data
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+server/uploads/
+
+# Logs and local tooling
+*.log
+.npm-cache/
+.DS_Store
+
+# Large local portfolio media (store these in object storage/video hosting)
+new videos/
+PORTFOLIO/
+PORTFOLIO_ORGANIZED/
